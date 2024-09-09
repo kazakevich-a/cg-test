@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "npm run sass:write && npm run prettier:write && npm run stylelint:fix",
+    "dev": "npm run sass:watch",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "sass:write": "sass --no-source-map source/styles/styles.scss public/styles/styles.css --style compressed",
+    "sass:watch": "sass --no-source-map --watch source/styles/styles.scss:public/styles/styles.css --style compressed",
+    "stylelint:fix": "stylelint --fix source/styles/**/*.scss"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}
