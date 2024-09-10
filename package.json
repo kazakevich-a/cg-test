@@ -4,8 +4,8 @@
     "dev": "npm run sass:watch",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "sass:write": "sass --no-source-map source/styles/styles.scss public/styles/styles.css --style compressed",
-    "sass:watch": "sass --no-source-map --watch source/styles/styles.scss:public/styles/styles.css --style compressed",
+    "sass:write": "sass --no-source-map source/styles/styles.scss styles.css --style compressed",
+    "sass:watch": "sass --no-source-map --watch source/styles/styles.scss:styles.css --style compressed",
     "stylelint:fix": "stylelint --fix source/styles/**/*.scss"
   },
   "devDependencies": {
