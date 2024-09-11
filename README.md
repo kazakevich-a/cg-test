@@ -1,4 +1,4 @@
-# Sentient
+# Landing page / Test task
 
 Landing page for test task.
 
