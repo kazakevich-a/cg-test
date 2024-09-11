@@ -1,9 +1,13 @@
 /* Colors */
-$black: #000;
-$dark: #272733;
-$white: #fff;
+$color-black: #000;
+$color-white: #fff;
+$color-primary: #42a9ed;
+
+/* Fonts */
+$font-raleway: "Raleway", sans-serif;
+$font-lato: "Lato", system-ui;
 
 /* Responsive design */
-$xs: 320px;
-$md: 640px;
-$lg: 1024px;
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 640px;
+$breakpoint-desktop: 1280px;

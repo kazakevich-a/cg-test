@@ -5,4 +5,5 @@
 node_modules
 
 # Development
-styles
+styles.css
+index.html

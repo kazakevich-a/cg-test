@@ -4,7 +4,6 @@
   "plugins": ["stylelint-order"],
   "rules": {
     "at-rule-no-unknown": null,
-    "order/properties-alphabetical-order": true,
-    "selector-class-pattern": null
+    "order/properties-alphabetical-order": true
   }
 }

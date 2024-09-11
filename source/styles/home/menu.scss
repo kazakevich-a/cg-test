@@ -1,0 +1,36 @@
+.menu {
+  overflow: hidden;
+
+  @include respond("desktop") {
+    position: relative;
+    top: 3px;
+  }
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    @include respond("desktop") {
+      gap: 60px;
+    }
+  }
+
+  &_link {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color linear 0.3s;
+    white-space: nowrap;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &__active {
+      color: $color-primary;
+      pointer-events: none;
+    }
+  }
+}

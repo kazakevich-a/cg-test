@@ -1,8 +1,11 @@
 .page {
-  background-color: blue;
-  height: 100%;
+  background: url("images/bg-head.png") top center no-repeat;
   display: flex;
   flex-direction: column;
-  max-width: 1920px;
+  height: 100%;
   margin: 0 auto;
+
+  @include respond("desktop") {
+    max-width: 1920px;
+  }
 }

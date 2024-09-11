@@ -1,4 +1,7 @@
 * {
+  margin: 0;
+  padding: 0;
+
   &,
   &::before,
   &::after {
@@ -17,9 +20,9 @@ html {
 }
 
 body {
-  background-color: $dark;
-  color: $white;
-  font: 16px Arial, sans-serif;
+  background-color: #272733;
+  color: $color-white;
+  font: 18px $font-lato;
   height: 100%;
   line-height: 1;
   margin: 0;
@@ -29,14 +32,10 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
-h1,
-h2 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
+ul {
+  list-style: none;
 }
