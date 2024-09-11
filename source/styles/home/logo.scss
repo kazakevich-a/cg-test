@@ -1,8 +1,9 @@
 .logo {
-  font: 800 28px $font-lato;
-  text-transform: uppercase;
-
-  &_accent {
-    color: $color-primary;
+  font: {
+    family: $font-lato;
+    size: 28px;
+    weight: 800;
   }
+
+  text-transform: uppercase;
 }

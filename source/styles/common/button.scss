@@ -1,0 +1,33 @@
+.button {
+  background-color: $color-primary;
+  color: $color-white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: background linear 0.3s;
+  border: {
+    color: $color-white;
+    radius: 4px;
+    style: solid;
+    width: 1px;
+  }
+
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  @include respond("tablet") {
+    min-width: 180px;
+  }
+
+  &__secondary {
+    background-color: $color-white;
+    border-color: #6f6d7b;
+    color: $color-black;
+
+    &:hover {
+      background-color: #e9e8e8;
+    }
+  }
+}

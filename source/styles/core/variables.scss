@@ -2,6 +2,7 @@
 $color-black: #000;
 $color-white: #fff;
 $color-primary: #42a9ed;
+$color-dark: #286690;
 
 /* Fonts */
 $font-raleway: "Raleway", sans-serif;
@@ -11,3 +12,6 @@ $font-lato: "Lato", system-ui;
 $breakpoint-mobile: 320px;
 $breakpoint-tablet: 640px;
 $breakpoint-desktop: 1280px;
+
+/* Etc */
+$max-width-content: 1024px;

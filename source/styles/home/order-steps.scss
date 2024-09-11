@@ -1,0 +1,76 @@
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include respond("desktop") {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  &_item {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    padding: 0 4px;
+
+    @include respond("desktop") {
+      flex-direction: column;
+      width: 200px;
+    }
+  }
+
+  &_icon {
+    align-items: center;
+    background-color: $color-primary;
+    display: flex;
+    flex-shrink: 0;
+    height: 100px;
+    justify-content: center;
+    width: 100px;
+    border: {
+      color: $color-dark;
+      radius: 50%;
+      style: solid;
+      width: 5px;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 55px;
+      width: 55px;
+      background: {
+        position: 50%;
+        repeat: no-repeat;
+        size: contain;
+      }
+    }
+
+    &__search::before {
+      background-image: url("/icons/search.svg");
+    }
+
+    &__file::before {
+      background-image: url("/icons/file.svg");
+    }
+
+    &__percent::before {
+      background-image: url("/icons/percent.svg");
+    }
+
+    &__message::before {
+      background-image: url("/icons/message.svg");
+    }
+
+    &__money::before {
+      background-image: url("/icons/money.svg");
+    }
+  }
+
+  &_text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}

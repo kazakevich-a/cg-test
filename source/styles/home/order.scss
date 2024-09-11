@@ -1,0 +1,43 @@
+.order {
+  flex: 1 1 0;
+  background: {
+    image: url("images/bg-order.webp");
+    position: 0 50%;
+    size: cover;
+  }
+
+  &_inner {
+    @extend %inner;
+
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+
+    @include respond("desktop") {
+      gap: 32px;
+      max-width: $max-width-content;
+      padding: 32px;
+    }
+  }
+
+  &_agenda {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &_header {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &_text {
+    color: #bbb;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

@@ -1,6 +1,15 @@
+/* Layout */
 @import "page";
 @import "header";
-@import "logo";
 @import "menu";
+@import "logo";
 @import "main";
 @import "footer";
+
+/* Articles Promo */
+@import "promo";
+
+/* Articles Order */
+@import "order";
+@import "order-steps";
+@import "order-form";
