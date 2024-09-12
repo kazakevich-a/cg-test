@@ -4,6 +4,8 @@
 # Dependency directories
 node_modules
 
+# Assets
+assets
+
 # Development
-styles.css
 index.html

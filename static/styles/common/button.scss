@@ -3,14 +3,15 @@
   color: $color-white;
   cursor: pointer;
   font-size: 14px;
-  padding: 10px 15px;
+  height: $height-field;
+  padding: $padding-field;
   text-transform: uppercase;
   transition: background linear 0.3s;
   border: {
     color: $color-white;
-    radius: 4px;
-    style: solid;
-    width: 1px;
+    radius: $border-radius-field;
+    style: $border-style-field;
+    width: $border-width-field;
   }
 
   &:hover {
@@ -21,13 +22,20 @@
     min-width: 180px;
   }
 
+  &__submit {
+    font: {
+      size: 15px;
+      weight: 600;
+    }
+  }
+
   &__secondary {
     background-color: $color-white;
     border-color: #6f6d7b;
     color: $color-black;
 
     &:hover {
-      background-color: #e9e8e8;
+      background-color: $color-light;
     }
   }
 }

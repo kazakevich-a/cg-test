@@ -1,5 +1,9 @@
 @mixin respond($breakpoint) {
-  @if $breakpoint == "tablet" {
+  @if $breakpoint == "mobile" {
+    @media all and (min-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
     @media all and (min-width: $breakpoint-tablet) {
       @content;
     }

@@ -37,7 +37,7 @@ $color-grey: #c3c3c3;
     @extend %inner;
 
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
     gap: 16px;
     justify-content: space-between;
     min-height: 80px;
@@ -47,6 +47,17 @@ $color-grey: #c3c3c3;
       flex-direction: row;
       max-width: fit-content;
       padding: 16px 32px;
+    }
+  }
+
+  &_separator {
+    display: none;
+
+    @include respond("desktop") {
+      background-color: $color-white;
+      display: block;
+      height: 14px;
+      width: 1px;
     }
   }
 
@@ -62,16 +73,8 @@ $color-grey: #c3c3c3;
 
     @include respond("tablet") {
       flex-direction: row;
-      gap: 32px;
-    }
-
-    @include respond("desktop") {
-      border: {
-        left: 1px solid $color-grey;
-        right: 1px solid $color-grey;
-      }
-
-      padding: 0 40px;
+      gap: 0;
+      justify-content: space-between;
     }
   }
 
@@ -81,15 +84,15 @@ $color-grey: #c3c3c3;
     color: $color-grey;
 
     &__qiwi::before {
-      background-image: url("icons/qiwi.svg");
+      background-image: url("#{$path-icons}/qiwi.svg");
     }
 
     &__yandex::before {
-      background-image: url("icons/yandex.svg");
+      background-image: url("#{$path-icons}/icons/yandex.svg");
     }
 
     &__web::before {
-      background-image: url("icons/web.svg");
+      background-image: url("#{$path-icons}/icons/web.svg");
     }
   }
 
@@ -109,7 +112,7 @@ $color-grey: #c3c3c3;
     @include link;
 
     &::before {
-      background-image: url("icons/mail.svg");
+      background-image: url("#{$path-icons}/mail.svg");
     }
   }
 
@@ -118,7 +121,7 @@ $color-grey: #c3c3c3;
     @include link;
 
     &::before {
-      background-image: url("icons/vk.svg");
+      background-image: url("#{$path-icons}/vk.svg");
     }
   }
 }

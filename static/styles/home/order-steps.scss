@@ -48,29 +48,32 @@
     }
 
     &__search::before {
-      background-image: url("/icons/search.svg");
+      background-image: url("#{$path-icons}/search.svg");
     }
 
     &__file::before {
-      background-image: url("/icons/file.svg");
+      background-image: url("#{$path-icons}/file.svg");
     }
 
     &__percent::before {
-      background-image: url("/icons/percent.svg");
+      background-image: url("#{$path-icons}/percent.svg");
     }
 
     &__message::before {
-      background-image: url("/icons/message.svg");
+      background-image: url("#{$path-icons}/message.svg");
     }
 
     &__money::before {
-      background-image: url("/icons/money.svg");
+      background-image: url("#{$path-icons}/money.svg");
     }
   }
 
   &_text {
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
+
+    @include respond("tablet") {
+      text-align: center;
+    }
   }
 }

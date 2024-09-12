@@ -7,8 +7,12 @@
   &_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8px;
     justify-content: center;
+
+    @include respond("tablet") {
+      gap: 30px;
+    }
 
     @include respond("desktop") {
       gap: 60px;

@@ -1,7 +1,7 @@
 .order {
   flex: 1 1 0;
   background: {
-    image: url("images/bg-order.webp");
+    image: url("#{$path-images}/bg-order.webp");
     position: 0 50%;
     size: cover;
   }
@@ -10,13 +10,13 @@
     @extend %inner;
 
     align-items: center;
-    gap: 16px;
-    padding: 16px;
+    gap: 48px;
+    padding: 48px 16px;
 
     @include respond("desktop") {
-      gap: 32px;
+      gap: 64px;
       max-width: $max-width-content;
-      padding: 32px;
+      padding: 120px 32px;
     }
   }
 
@@ -39,5 +39,9 @@
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
+  }
+
+  &_form {
+    width: 100%;
   }
 }

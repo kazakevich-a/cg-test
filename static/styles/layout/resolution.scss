@@ -1,0 +1,22 @@
+.resolution {
+  align-items: center;
+  background: rgba($color-black, 0.95);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+
+  @include respond("mobile") {
+    display: none;
+  }
+
+  &_text {
+    line-height: 1.2;
+    text-align: center;
+  }
+}

@@ -8,11 +8,11 @@
     display: block;
     left: 0;
     position: absolute;
-    top: -100px;
+    top: -$height-header;
     width: 100%;
     z-index: -1;
     background: {
-      image: url("images/bg-promo.webp");
+      image: url("#{$path-images}/bg-promo.webp");
       position: 0 50%;
       size: cover;
     }
@@ -22,12 +22,13 @@
     @extend %inner;
 
     gap: 40px;
-    padding: 16px;
+    padding: 48px 16px;
 
     @include respond("desktop") {
-      gap: 80px;
+      justify-content: space-between;
       max-width: $max-width-content;
-      padding: 32px;
+      min-height: 450px;
+      padding: 80px 32px 180px;
     }
   }
 

@@ -6,7 +6,7 @@
 
     align-items: center;
     gap: 16px;
-    min-height: 100px;
+    height: $height-header;
     padding: 16px;
 
     @include respond("desktop") {

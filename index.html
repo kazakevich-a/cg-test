@@ -17,13 +17,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kazakevich-a.github.io" />
     <meta name="application-name" content="LOREMIPSUM.NET" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicons/favicon-180.png"/>
     <link rel="icon" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@0,100..900;1,100..900&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" />
-    <link href="styles.css?v.1.0" rel="stylesheet" />
+    <link href="assets/styles.css?v.1.0" rel="stylesheet" />
     <link rel="manifest" href="site.webmanifest" />
   </head>
   <body>
@@ -97,23 +97,65 @@
                 </li>
               </ul>
             </div>
+            <div class="order_form">
+              <form class="form">
+                <div>
+                  <select class="select" name="select">
+                    <option>Sed ut perspiciatis</option>
+                    <option>Nemo enim ipsam</option>
+                    <option>Et harum quidem</option>
+                    <option>Temporibus autem</option>
+                    <option>Itaque earum rerum</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="email">
+                    <input class="input" id="email" name="email" placeholder="Ваш e-mail" type="email">
+                  </label>
+                </div>
+                <div>
+                  <label for="name">
+                    <input class="input" id="name" name="name" placeholder="Ваше имя" type="text">
+                  </label>
+                </div>
+                <div>
+                  <label for="range">
+                  <input class="range" id="range" name="range" type="range">
+                  </label>
+                </div>
+                <div>
+                  <label class="file" for="file">
+                    <input class="file_input" id="file" name="file" type="file">
+                    <span class="file_text">Прикрепить файл</span>
+                  </label>
+                </div>
+                <div>
+                  <button class="button button__submit" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
           </div>
         </article>
       </main>
       <footer class="footer">
         <div class="footer_inner">
           <div class="footer_copyright">© 2018 «LoremIpsum.net» Все права защищены.</div>
+          <div class="footer_separator"></div>
           <div class="footer_payments-list">
             <span class="footer_payment footer_payment__qiwi">Qiwi wallet</span>
             <span class="footer_payment footer_payment__yandex">Yandex Money</span>
             <span class="footer_payment footer_payment__web">Web Money</span>
           </div>
+          <div class="footer_separator"></div>
           <div class="footer_etc">
             <a class="footer_mail" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
             <a class="footer_vk" href="/">Мы вконтакте</a>
           </div>
         </div>
       </footer>
+    </section>
+    <section class="resolution">
+      <p class="resolution_text">Поверните ваше устройство</p>
     </section>
   </body>
 </html>

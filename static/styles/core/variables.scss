@@ -1,8 +1,13 @@
+$path-images: "/static/images";
+$path-icons: "/static/icons";
+
 /* Colors */
 $color-black: #000;
 $color-white: #fff;
 $color-primary: #42a9ed;
+$color-light: #e9e8e8;
 $color-dark: #286690;
+$color-darker: #272733;
 
 /* Fonts */
 $font-raleway: "Raleway", sans-serif;
@@ -13,5 +18,13 @@ $breakpoint-mobile: 320px;
 $breakpoint-tablet: 640px;
 $breakpoint-desktop: 1280px;
 
-/* Etc */
+/* Layout */
 $max-width-content: 1024px;
+$height-header: 100px;
+
+/* Fields */
+$height-field: 43px;
+$border-radius-field: 4px;
+$border-style-field: solid;
+$border-width-field: 1px;
+$padding-field: 10px 15px;

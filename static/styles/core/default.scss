@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  outline: 0;
   padding: 0;
 
   &,
@@ -20,14 +21,14 @@ html {
 }
 
 body {
-  background-color: #272733;
+  background-color: $color-darker;
   color: $color-white;
   height: 100%;
   line-height: 1;
   margin: 0;
   min-width: 320px;
-  overflow-x: auto;
   padding: 0;
+  position: relative;
   font: {
     family: $font-lato;
     size: 18px;
