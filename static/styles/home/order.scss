@@ -42,7 +42,9 @@
   }
 
   &_steps {
-    width: 100%;
+    @include respond("desktop") {
+      width: 100%;
+    }
   }
 
   &_form {

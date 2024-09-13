@@ -16,6 +16,7 @@
 
     &__submit {
       @include respond("desktop") {
+        grid-column: span 3;
         grid-column-start: 2;
       }
     }

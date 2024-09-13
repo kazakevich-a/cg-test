@@ -5,7 +5,6 @@
 
   @include respond("desktop") {
     flex-direction: row;
-    gap: 0;
   }
 
   &_item {
@@ -16,7 +15,6 @@
 
     @include respond("desktop") {
       flex-direction: column;
-      justify-content: space-between;
       width: 25%;
     }
   }
@@ -44,7 +42,7 @@
         content: "";
         display: block;
         height: 6px;
-        left: calc(100% + 18px);
+        left: calc(100% + 20px);
         position: absolute;
         width: 106px;
         background: {

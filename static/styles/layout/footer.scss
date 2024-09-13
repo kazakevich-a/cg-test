@@ -18,6 +18,8 @@ $color-grey: #c3c3c3;
     display: inline-block;
     height: 20px;
     width: 20px;
+    position: relative;
+    top: -2px;
   }
 }
 
@@ -73,8 +75,6 @@ $color-grey: #c3c3c3;
 
     @include respond("tablet") {
       flex-direction: row;
-      gap: 0;
-      justify-content: space-between;
     }
   }
 
@@ -88,11 +88,11 @@ $color-grey: #c3c3c3;
     }
 
     &__yandex::before {
-      background-image: url("#{$path-icons}/icons/yandex.svg");
+      background-image: url("#{$path-icons}/yandex.svg");
     }
 
     &__web::before {
-      background-image: url("#{$path-icons}/icons/web.svg");
+      background-image: url("#{$path-icons}/web.svg");
     }
   }
 
