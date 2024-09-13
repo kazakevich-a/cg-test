@@ -5,7 +5,7 @@
   height: 100vh;
   justify-content: center;
   left: 0;
-  padding: 16px;
+  padding: $space-4;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -16,7 +16,7 @@
   }
 
   &_text {
-    line-height: 1.2;
+    line-height: $line-height-tight;
     text-align: center;
   }
 }

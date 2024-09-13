@@ -5,15 +5,15 @@
     @extend %inner;
 
     align-items: center;
-    gap: 16px;
+    gap: $space-4;
     height: $height-header;
-    padding: 16px;
+    padding: $space-4;
 
     @include respond("desktop") {
       flex-direction: row;
       justify-content: space-between;
       max-width: $max-width-content;
-      padding: 16px 32px;
+      padding: $space-4 $space-8;
     }
   }
 }

@@ -1,7 +1,7 @@
 .steps {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: $space-8;
 
   @include respond("desktop") {
     flex-direction: row;
@@ -11,12 +11,13 @@
   &_item {
     align-items: center;
     display: flex;
-    gap: 16px;
-    padding: 0 4px;
+    gap: $space-4;
+    padding: 0 $space-1;
 
     @include respond("desktop") {
       flex-direction: column;
-      width: 200px;
+      justify-content: space-between;
+      width: 25%;
     }
   }
 
@@ -27,12 +28,32 @@
     flex-shrink: 0;
     height: 100px;
     justify-content: center;
+    position: relative;
     width: 100px;
     border: {
       color: $color-dark;
       radius: 50%;
       style: solid;
       width: 5px;
+    }
+
+    &::after {
+      display: none;
+
+      @include respond("desktop") {
+        content: "";
+        display: block;
+        height: 6px;
+        left: calc(100% + 14px);
+        position: absolute;
+        width: 106px;
+        background: {
+          image: url("#{$path-icons}/dots.svg");
+          position: 50%;
+          repeat: no-repeat;
+          size: contain;
+        }
+      }
     }
 
     &::before {
@@ -68,9 +89,16 @@
     }
   }
 
+  &_item:last-child .steps_icon::after {
+    @include respond("desktop") {
+      display: none;
+    }
+  }
+
   &_text {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: $line-height-tight;
+    padding: 0 $space-1;
 
     @include respond("tablet") {
       text-align: center;

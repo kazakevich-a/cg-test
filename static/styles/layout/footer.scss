@@ -38,15 +38,15 @@ $color-grey: #c3c3c3;
 
     align-items: center;
     font-size: 13px;
-    gap: 16px;
+    gap: $space-4;
     justify-content: space-between;
-    min-height: 80px;
-    padding: 16px;
+    min-height: $space-20;
+    padding: $space-4;
 
     @include respond("desktop") {
       flex-direction: row;
       max-width: fit-content;
-      padding: 16px 32px;
+      padding: $space-4 $space-8;
     }
   }
 
@@ -62,14 +62,14 @@ $color-grey: #c3c3c3;
   }
 
   &_copyright {
-    line-height: 1.2;
+    line-height: $line-height-tight;
     text-align: center;
   }
 
   &_payments-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $space-4;
 
     @include respond("tablet") {
       flex-direction: row;
@@ -99,11 +99,11 @@ $color-grey: #c3c3c3;
   &_etc {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $space-4;
 
     @include respond("tablet") {
       flex-direction: row;
-      gap: 32px;
+      gap: $space-8;
     }
   }
 

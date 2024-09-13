@@ -13,7 +13,7 @@
   width: 100%;
   font: {
     size: 15px;
-    weight: 600;
+    weight: 700;
   }
   border: {
     color: $color-primary;
@@ -38,7 +38,7 @@
   &_text {
     align-items: center;
     display: flex;
-    gap: 8px;
+    gap: $space-2;
 
     &::before {
       content: "";

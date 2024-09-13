@@ -10,13 +10,13 @@
     @extend %inner;
 
     align-items: center;
-    gap: 48px;
-    padding: 48px 16px;
+    gap: $space-12;
+    padding: $space-12 $space-4 $space-16;
 
     @include respond("desktop") {
-      gap: 64px;
+      gap: $space-16;
       max-width: $max-width-content;
-      padding: 120px 32px;
+      padding: $space-32 $space-8;
     }
   }
 
@@ -29,7 +29,7 @@
 
   &_header {
     font-size: 36px;
-    line-height: 1.2;
+    line-height: $line-height-tight;
     text-align: center;
     text-transform: uppercase;
   }
