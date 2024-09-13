@@ -6,7 +6,7 @@
   height: $height-field;
   padding: $padding-field;
   text-transform: uppercase;
-  transition: background linear 0.3s;
+  transition: background 0.15s ease-in-out;
   border: {
     color: $color-white;
     radius: $border-radius-field;

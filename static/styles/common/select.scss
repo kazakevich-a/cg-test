@@ -1,14 +1,11 @@
 .select {
-  background-color: #dfdfe0;
+  @extend %control;
+
   cursor: pointer;
-  font-size: 18px;
-  height: $height-field;
-  padding: $padding-field;
-  width: 100%;
-  border: {
-    color: $color-white;
-    radius: $border-radius-field;
-    style: $border-style-field;
-    width: $border-width-field;
+  background: {
+    image: url("#{$path-icons}/arrow.svg");
+    position: 98% 50%;
+    repeat: no-repeat;
+    size: 20px;
   }
 }

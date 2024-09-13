@@ -1,37 +1,55 @@
+/* Since the slider-thumb mixin is used only in this file, it is not moved to the common mixins. */
+
+@mixin slider-thumb {
+  appearance: none;
+  background-color: $color-primary;
+  height: 24px;
+  width: 24px;
+  border: {
+    color: $color-dark;
+    radius: 50%;
+    style: solid;
+    width: 4px;
+  }
+}
+
 .range {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 
   &_text {
+    flex: 1;
+    font-size: 18px;
   }
 
   &_input {
     appearance: none;
     background-color: $color-light;
+    cursor: pointer;
+    height: 10px;
+    margin-top: 13px;
+    width: 100%;
     border: {
       color: $color-white;
+      radius: 4px;
       style: solid;
       width: 1px;
-      radius: 4px;
     }
-    position: relative;
-    width: 100%;
-    height: 8px;
-  }
 
-  &_input::-webkit-slider-thumb {
-    appearance: none;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    border: {
-      width: 3px;
-      style: solid;
-      color: $color-dark;
+    &::-webkit-slider-thumb {
+      @include slider-thumb;
     }
-    cursor: pointer;
-    background: $color-primary;
+
+    &::-moz-range-thumb {
+      @include slider-thumb;
+    }
   }
 
   &_value {
+    font: {
+      size: 18px;
+      weight: 700;
+    }
   }
 }

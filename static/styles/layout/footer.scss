@@ -1,4 +1,4 @@
-/* Since the icon mixin and the color-grey variable are used only in this file, it is not moved to the common mixins.scss file */
+/* Since the icon mixin and the color-grey variable are used only in this file, it is not moved to the common mixins. */
 
 $color-grey: #c3c3c3;
 
@@ -23,7 +23,7 @@ $color-grey: #c3c3c3;
 
 @mixin link {
   color: $color-white;
-  transition: color linear 0.3s;
+  transition: color 0.15s ease-in-out;
 
   &:hover {
     color: $color-primary;
